@@ -1,0 +1,14 @@
+@value makerGreen from '../../common/colors.css';
+
+.preview {
+  /* 반반 씩 나누기 위해 */
+  flex-basis: 50%;
+  background-color: pink;
+}
+
+.title {
+  color: makerGreen;
+  text-align: center;
+  margin-bottom: 1em;
+  width: 100%;
+}

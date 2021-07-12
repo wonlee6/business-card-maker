@@ -1,0 +1,14 @@
+@value makerGreen from '../../common/colors.css';
+
+.editor {
+  /* 반반 씩 나누기 위해 */
+  flex-basis: 50%;
+  background-color: wheat;
+}
+
+.title {
+  color: makerGreen;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
