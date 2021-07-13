@@ -3,7 +3,8 @@
 .editor {
   /* 반반 씩 나누기 위해 */
   flex-basis: 50%;
-  background-color: wheat;
+  border-right: 1px solid lightgrey;
+  padding: 0.5em 2em;
 }
 
 .title {

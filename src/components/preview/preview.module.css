@@ -3,7 +3,6 @@
 .preview {
   /* 반반 씩 나누기 위해 */
   flex-basis: 50%;
-  background-color: pink;
 }
 
 .title {
