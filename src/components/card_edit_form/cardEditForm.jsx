@@ -3,17 +3,8 @@ import Button from '../button/button';
 import ImageFileInput from '../image_file_input/imageFileInput';
 import styles from './cardEditForm.module.css';
 const CardEditForm = ({ card }) => {
-  const {
-    id,
-    name,
-    theme,
-    company,
-    title,
-    emaile,
-    message,
-    fileName,
-    fileURL,
-  } = card;
+  const { id, name, theme, company, title, email, message, fileName, fileURL } =
+    card;
 
   const onSubmit = () => {};
   return (
@@ -31,12 +22,7 @@ const CardEditForm = ({ card }) => {
         <option value='colorful'>colorful</option>
       </select>
       <input className={styles.input} type='text' name='title' value={title} />
-      <input
-        className={styles.input}
-        type='text'
-        name='emaile'
-        value={emaile}
-      />
+      <input className={styles.input} type='text' name='emaile' value={email} />
       <textarea
         className={styles.textarea}
         name='message'
