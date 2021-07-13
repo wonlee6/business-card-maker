@@ -2,19 +2,36 @@ import React from 'react';
 import Button from '../button/button';
 import ImageFileInput from '../image_file_input/imageFileInput';
 import styles from './cardEditForm.module.css';
-const CardEditForm = ({ card }) => {
+const CardEditForm = ({ card, updateCard, deleteCard }) => {
   const { id, name, theme, company, title, email, message, fileName, fileURL } =
     card;
 
-  const onSubmit = () => {};
+  const onChange = (event) => {
+    if (event.currentTarget === null) return;
+    event.preventDefault(); // 브라우저 이벤트 방지
+    updateCard({
+      ...card,
+      [event.currentTarget.name]: event.currentTarget.value,
+    });
+  };
+  const onSubmit = () => {
+    deleteCard(card);
+  };
   return (
     <form className={styles.form}>
-      <input className={styles.input} type='text' name='name' value={name} />
+      <input
+        onChange={onChange}
+        className={styles.input}
+        type='text'
+        name='name'
+        value={name}
+      />
       <input
         className={styles.input}
         type='text'
         name='company'
         value={company}
+        onChange={onChange}
       />
       <select className={styles.select} name='theme' value={theme}>
         <option value='light'>light</option>

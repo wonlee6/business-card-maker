@@ -15,7 +15,7 @@ const CardAddEditForm = ({ onAdd }) => {
     console.log(event);
     event.preventDefault();
     const card = {
-      id: Date.now(), //uuid
+      id: Date.now(),
       name: nameRef.current.value || '',
       company: companyRef.current.value || '',
       theme: themeRef.current.value,
