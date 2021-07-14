@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Maker from './components/maker/maker';
 
 // exact = 주어진 경로와 정확히 맞아 떨어져야만 설정한 컴포넌트를 보여준다.
-const App = ({ FileInput, authService }) => {
+const App = ({ FileInput, authService, cardRepository }) => {
   return (
     <div className={styles.app}>
       <Router>
@@ -14,7 +14,11 @@ const App = ({ FileInput, authService }) => {
             <Login authService={authService} />;
           </Route>
           <Route exact path='/maker'>
-            <Maker FileInput={FileInput} authService={authService} />
+            <Maker
+              FileInput={FileInput}
+              authService={authService}
+              cardRepository={cardRepository}
+            />
           </Route>
         </Switch>
       </Router>

@@ -3,6 +3,8 @@
 .preview {
   /* 반반 씩 나누기 위해 */
   flex-basis: 50%;
+  /* 스크롤링 되기 위해 */
+  overflow-y: auto;
 }
 
 .title {
@@ -11,3 +13,12 @@
   margin-bottom: 1em;
   width: 100%;
 }
+
+/* .cards {
+  width: 100%;
+  height: 100%;
+  padding: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
