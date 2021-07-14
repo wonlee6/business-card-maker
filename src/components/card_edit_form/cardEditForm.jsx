@@ -14,6 +14,13 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
   const { name, theme, company, title, email, message, fileName, fileURL } =
     card;
 
+  const onFileChange = (file) => {
+    updateCard({
+      ...card,
+      fileName: file.name,
+      fileURL: file.url,
+    });
+  };
   const onChange = (event) => {
     if (event.currentTarget === null) return;
     event.preventDefault(); // 브라우저 이벤트 방지
@@ -48,6 +55,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         className={styles.select}
         name='theme'
         value={theme}
+        onChange={onChange}
       >
         <option value='light'>light</option>
         <option value='dark'>dark</option>
@@ -77,7 +85,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       ></textarea>
       <div className={styles.fileInput}>
-        <FileInput />
+        <FileInput name={fileName} onFileChange={onFileChange} />
       </div>
       <Button name='Delete' onClick={onSubmit} />
     </form>
