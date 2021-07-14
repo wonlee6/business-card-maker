@@ -72,7 +72,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         ref={emailRef}
         className={styles.input}
         type='text'
-        name='emaile'
+        name='email'
         value={email}
         onChange={onChange}
       />

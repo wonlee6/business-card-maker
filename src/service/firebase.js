@@ -1,5 +1,8 @@
 // firebase - realtime DataBase 만들고 앱 추가
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
+
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -11,4 +14,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-export default firebaseApp;
+export const firebaseAuth = firebaseApp.auth();
+export const firebaseDatabase = firebaseApp.database();
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
+export const githubProvider = new firebase.auth.GithubAuthProvider();
