@@ -6,7 +6,7 @@ import Header from '../header/header';
 import Preview from '../preview/preview';
 import styles from './maker.module.css';
 
-const Maker = ({ authService }) => {
+const Maker = ({ FileInput, authService }) => {
   // object key를 이용해서 데이터를 가져오는 방식으로 변경
   const [cards, setCards] = useState({
     1: {
@@ -81,6 +81,7 @@ const Maker = ({ authService }) => {
       <Header onLogout={onLogout} />
       <div className={styles.container}>
         <Editor
+          FileInput={FileInput}
           cards={cards}
           addCard={createOrUpdateCard}
           updateCard={createOrUpdateCard}
