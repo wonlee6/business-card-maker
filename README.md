@@ -1,5 +1,7 @@
 # Business Card Maker Project_Plan
 
+<<<<<<< HEAD
+
 > 기술 스택 : react, react-router, firebase, cloudinary(imageUploader)
 
 ### Login 화면
