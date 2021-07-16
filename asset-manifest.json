@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/business-card-maker/static/css/main.8eba09da.chunk.css",
-    "main.js": "/business-card-maker/static/js/main.41040c45.chunk.js",
-    "main.js.map": "/business-card-maker/static/js/main.41040c45.chunk.js.map",
-    "runtime-main.js": "/business-card-maker/static/js/runtime-main.d36509c6.js",
-    "runtime-main.js.map": "/business-card-maker/static/js/runtime-main.d36509c6.js.map",
-    "static/js/2.51eeb2c3.chunk.js": "/business-card-maker/static/js/2.51eeb2c3.chunk.js",
-    "static/js/2.51eeb2c3.chunk.js.map": "/business-card-maker/static/js/2.51eeb2c3.chunk.js.map",
+    "main.css": "/business-card-maker/static/css/main.aec91438.chunk.css",
+    "main.js": "/business-card-maker/static/js/main.a7284688.chunk.js",
+    "main.js.map": "/business-card-maker/static/js/main.a7284688.chunk.js.map",
+    "runtime-main.js": "/business-card-maker/static/js/runtime-main.0ad19a2b.js",
+    "runtime-main.js.map": "/business-card-maker/static/js/runtime-main.0ad19a2b.js.map",
+    "static/js/2.730aa4a9.chunk.js": "/business-card-maker/static/js/2.730aa4a9.chunk.js",
+    "static/js/2.730aa4a9.chunk.js.map": "/business-card-maker/static/js/2.730aa4a9.chunk.js.map",
     "index.html": "/business-card-maker/index.html",
-    "static/css/main.8eba09da.chunk.css.map": "/business-card-maker/static/css/main.8eba09da.chunk.css.map",
-    "static/js/2.51eeb2c3.chunk.js.LICENSE.txt": "/business-card-maker/static/js/2.51eeb2c3.chunk.js.LICENSE.txt"
+    "static/css/main.aec91438.chunk.css.map": "/business-card-maker/static/css/main.aec91438.chunk.css.map",
+    "static/js/2.730aa4a9.chunk.js.LICENSE.txt": "/business-card-maker/static/js/2.730aa4a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d36509c6.js",
-    "static/js/2.51eeb2c3.chunk.js",
-    "static/css/main.8eba09da.chunk.css",
-    "static/js/main.41040c45.chunk.js"
+    "static/js/runtime-main.0ad19a2b.js",
+    "static/js/2.730aa4a9.chunk.js",
+    "static/css/main.aec91438.chunk.css",
+    "static/js/main.a7284688.chunk.js"
   ]
 }
