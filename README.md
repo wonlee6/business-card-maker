@@ -269,3 +269,30 @@ imagesFileInput.jsx 컴포넌트에서는 UI작업을 하고,
 ```
 
 index.js에서 props로 전달한 FileInput을 통해 작업을 수행한다.
+
+# Netlify 통한 배포
+
+### [homepage](https://create-react-app.dev/) 에 react를 배포하는 다양한 방법이 있다
+
+이번 프로젝트는 netlify 통해 배포를 함
+
+<!-- ![Netlify](/public/images/11.png) -->
+
+1. yarn build 실행을 한다.
+2. netlify 설치 진행 후 deploy 입력
+
+```
+npm install netlify-cli -g // 1
+netlify deploy // 2
+```
+
+3. 실행 한 후 github 권한 등록 후, 콘솔창에서 create를 선택(키보드 화살표로 움직여 엔터)
+
+4. Team Name, Site Name(선택) 입력 후, (Publish directory) build 입력 후 엔터
+
+5. admin URL 클릭해 확인
+
+### 예외
+
+1. firebase 경우 - firebase의 Authentication에서 admin URL을 등록해주어야 함
+2. package.json에 있는 homepage 주소가 있을 경우, 삭제 후 다시 netlify deploy 진행
