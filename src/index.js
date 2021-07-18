@@ -6,6 +6,10 @@ import AuthService from './service/auth_service';
 import ImageUploader from './service/image_uploader';
 import ImageFileInput from './components/image_file_input/imageFileInput';
 import CardRepository from './service/card_repository';
+import Corona from './service/corona_service';
+
+const corona = new Corona(process.env.REACT_APP_CORONA_API_KEY);
+
 const authService = new AuthService();
 const imageUploader = new ImageUploader();
 const cardRepository = new CardRepository();
@@ -21,6 +25,7 @@ ReactDOM.render(
       authService={authService}
       FileInput={FileInput}
       cardRepository={cardRepository}
+      corona={corona}
     />
   </React.StrictMode>,
   document.getElementById('root')
