@@ -26,7 +26,6 @@
 }
 .li:nth-child(1) {
   margin-right: 1rem;
-  flex-basis: 10%;
 }
 .li:nth-child(2) {
   margin-left: 1rem;

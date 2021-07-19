@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Footer from '../footer/footer';
+import GoogleMap from '../googleMap/googleMap';
 import Header from '../header/header';
 import styles from './corona.module.css';
 import CoronaItem from './coronaItem';
@@ -22,6 +23,7 @@ const Corona = ({ authService, corona }) => {
       <Header onLogout={onLogout} />
       <div className={styles.container}>
         <CoronaItem coronaItem={coronaItem} />
+        <GoogleMap coronaItem={coronaItem} />
       </div>
       <Footer />
     </section>
