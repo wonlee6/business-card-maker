@@ -1,6 +1,8 @@
 .corona {
   flex-basis: 50%;
   overflow-y: auto;
+  border-right: 1px solid lightgrey;
+  padding: 0 2em;
 }
 
 .title {

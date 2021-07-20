@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 .li:hover {
-  opacity: 0.8;
+  font-weight: bold;
 }
 .li:nth-child(1) {
   margin-right: 1rem;
