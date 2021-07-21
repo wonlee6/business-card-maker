@@ -1,0 +1,7 @@
+.maker {
+  font-size: 2rem;
+  position: absolute;
+  color: red;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}

@@ -1,30 +1,20 @@
-.items {
+.corona {
+  flex-basis: 50%;
+  overflow-y: auto;
+  border-right: 1px solid lightgrey;
+  padding: 0 2em;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.ul {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   align-items: center;
-  border-radius: 1em;
-  margin-bottom: 0.5em;
-  padding: 0.2em 0.5em;
-  background-color: rgba(250, 235, 215, 0.5);
-  max-width: 30rem;
-  width: 100%;
-  cursor: pointer;
-}
-
-.ul .items:hover {
-  transform: translateY(0.3em);
-  box-shadow: 6px 6px 8px 0px;
-}
-
-.info {
-  width: 100%;
-}
-
-.address,
-.centerType,
-.centerName,
-.org,
-.phoneNumber,
-.sido,
-.sigungu {
-  margin: 0;
 }

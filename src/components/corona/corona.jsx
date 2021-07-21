@@ -3,10 +3,15 @@ import Footer from '../footer/footer';
 import GoogleMap from '../googleMap/googleMap';
 import Header from '../header/header';
 import styles from './corona.module.css';
-import CoronaItem from './coronaItem';
+import CoronaList from './coronaList';
 
 const Corona = ({ authService, corona }) => {
   const [coronaItem, setCoronaItem] = useState([]);
+  const [defaultMap, setDefaultMap] = useState({});
+
+  const selectMap = (props) => {
+    setDefaultMap(props);
+  };
 
   const onLogout = useCallback(() => {
     authService.logout();
@@ -15,15 +20,30 @@ const Corona = ({ authService, corona }) => {
   useEffect(() => {
     corona //
       .getCoronaItems()
-      .then((items) => setCoronaItem(items.data));
+      .then((items) => {
+        setCoronaItem(items.data);
+        setDefaultMap({
+          lat: Number(items.data[0].lat),
+          lng: Number(items.data[0].lng),
+          zoom: 10,
+        });
+      });
   }, [corona]);
 
   return (
     <section className={styles.corona}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <CoronaItem coronaItem={coronaItem} />
-        <GoogleMap coronaItem={coronaItem} />
+        <CoronaList
+          coronaItem={coronaItem}
+          defaultMap={defaultMap}
+          onSelectMap={selectMap}
+        />
+        <GoogleMap
+          coronaItem={coronaItem}
+          defaultMap={defaultMap}
+          onSelectMap={selectMap}
+        />
       </div>
       <Footer />
     </section>
