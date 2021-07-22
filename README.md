@@ -1,4 +1,4 @@
-# accine Card Maker Project_Plan
+# Vaccine Card Maker Project_Plan
 
 [homepage](https://60f9641d5c2b28d782ee3da6--objective-rosalind-b76de9.netlify.app/)
 
