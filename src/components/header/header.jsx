@@ -1,8 +1,7 @@
 import React, { memo } from 'react';
 import styles from './header.module.css';
-import { Button } from 'elementz';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCrutch } from '@fortawesome/free-solid-svg-icons';
+import { AwesomeButton } from 'react-awesome-button';
+import 'react-awesome-button/dist/styles.css';
 import { useHistory } from 'react-router-dom';
 
 const Header = memo(({ onLogout }) => {
@@ -16,10 +15,7 @@ const Header = memo(({ onLogout }) => {
   return (
     <header className={styles.header}>
       <div>
-        <h1 className={styles.title}>
-          코로나 백신 카드 및 예방접종 센터 현황
-          <FontAwesomeIcon icon={faCrutch} className={styles.logo} />
-        </h1>
+        <h1 className={styles.title}>코로나 백신 카드 및 예방접종 센터 현황</h1>
       </div>
       <ul className={styles.ul}>
         <li className={styles.li} onClick={goHome}>
@@ -30,15 +26,10 @@ const Header = memo(({ onLogout }) => {
         </li>
       </ul>
       {onLogout && (
-        <div className={styles.logout}>
-          <Button
-            secondary
-            iconRight='shortcut'
-            effect='icon-float'
-            onClick={onLogout}
-          >
+        <div className={styles.logout} onClick={onLogout}>
+          <AwesomeButton onClick={onLogout} type='primary' size='medium'>
             Logout
-          </Button>
+          </AwesomeButton>
         </div>
       )}
     </header>

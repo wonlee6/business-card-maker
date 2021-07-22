@@ -12,8 +12,8 @@
 }
 
 .card.dark {
-  background-color: black;
-  color: white;
+  background-color: darkgray;
+  color: black;
 }
 
 .card.light {

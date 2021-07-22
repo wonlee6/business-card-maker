@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.ul .items:hover {
+.items:hover {
   transform: translateY(0.3em);
   box-shadow: 6px 6px 8px 0px;
 }

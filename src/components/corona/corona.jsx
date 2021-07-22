@@ -39,11 +39,7 @@ const Corona = ({ authService, corona }) => {
           defaultMap={defaultMap}
           onSelectMap={selectMap}
         />
-        <GoogleMap
-          coronaItem={coronaItem}
-          defaultMap={defaultMap}
-          onSelectMap={selectMap}
-        />
+        <GoogleMap defaultMap={defaultMap} />
       </div>
       <Footer />
     </section>

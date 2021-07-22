@@ -5,7 +5,7 @@ import styles from './editor.module.css';
 
 const Editor = ({ FileInput, cards, addCard, updateCard, deleteCard }) => (
   <section className={styles.editor}>
-    <h1 className={styles.title}>Card Maker</h1>
+    <h1 className={styles.title}>Vaccine Card Maker</h1>
     {/* object key로 데이터를 가져오는 식으로 변경 */}
     {Object.keys(cards).map((key) => (
       <CardEditForm
