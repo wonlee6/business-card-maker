@@ -20,7 +20,7 @@
 
 ### authService, components, module.css 크게 3단위로, 각각의 주어진 역할에 맞게 수행되게끔 구성되어 있다.
 
-- authService - firebase
+- authService - firebase(realtime database)
 - components - function
 - module.css - css
 
