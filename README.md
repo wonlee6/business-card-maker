@@ -14,7 +14,7 @@
 
 ### 예방접종센터 조회 페이지
 
-![map](/public/images/googleMap.gif)
+![map](/public/images/googlemap.gif)
 
 ## 내부 로직
 
