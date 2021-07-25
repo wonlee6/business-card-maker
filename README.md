@@ -2,21 +2,29 @@
 
 [homepage](https://60f9641d5c2b28d782ee3da6--objective-rosalind-b76de9.netlify.app/)
 
-> 기술 스택 : react, react-router, firebase, cloudinary(imageUploader)
+> 기술 스택 : react, react-router, firebase, cloudinary(imageUploader), google-map-react API
 
-### Login 화면
+### Login 페이지
 
-![login](/public/images/8.png)
+![login](/public/images/login.gif)
 
-### main 화면
+### main 페이지
 
-![main](/public/images/9.png)
+![main](/public/images/cardmaker.gif)
 
-### component
+### 예방접종센터 조회 페이지
 
-![main](/public/images/10.png)
+![main](/public/images/googleMap.gif)
 
-## react-router
+## 내부 로직
+
+### authService, components, module.css 크게 3단위로, 각각의 주어진 역할에 맞게 수행되게끔 구성되어 있다.
+
+- authService - firebase
+- components - function
+- module.css - css
+
+<!-- ## react-router
 
 ```jsx
 const App = ({ FileInput, authService, cardRepository }) => {
@@ -41,7 +49,7 @@ const App = ({ FileInput, authService, cardRepository }) => {
 };
 ```
 
-`react-router` 통해 경로 지정  
+`react-router` 통해 경로 지정
 `'/'` 에는 로그인 페이지를, `'/maker'`에는 카드를 만들 수 있는 페이지를 보여준다.
 
 기본적으로 fireBase라는 클라우드 데이터베이스를 이용하기에, firebase로 작업하는 부분은 service에 따로 분리하여 작업 한다.
@@ -268,7 +276,7 @@ imagesFileInput.jsx 컴포넌트에서는 UI작업을 하고,
 <FileInput name={fileName} onFileChange={onFileChange} />
 ```
 
-index.js에서 props로 전달한 FileInput을 통해 작업을 수행한다.
+index.js에서 props로 전달한 FileInput을 통해 작업을 수행한다. -->
 
 # Netlify 통한 배포
 
