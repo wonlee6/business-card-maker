@@ -18,11 +18,9 @@
 
 ## 내부 로직
 
-### authService, components, module.css 크게 3단위로, 각각의 주어진 역할에 맞게 수행되게끔 구성되어 있다.
+### Service 에서는 API 요청을 하며, 각각 컴포넌트 마다 css를 모듈화 하여 좀 더 작업 진행
 
-- authService - firebase(realtime database)
-- components - function
-- module.css - css
+- Service - firebase(realtime database), 공공 데이터 api
 
 <!-- ## react-router
 
